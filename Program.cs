@@ -17,3 +17,30 @@ int[] arr = new int[10];
 
             Console.WriteLine(String.Join(", ", arr));
             Console.WriteLine(count);
+            //------------------------------------------------------------------------------------------
+/*задача 2
+Задайте массив на 10 целых чисел. 
+Напишите программу, которая определяет количество чётных чисел в массиве.
+*/
+
+namespace EventNumbersInArray
+{
+    class Program
+
+{
+    static void Main(string[] args)
+    {
+        int[]array = new int[10] { 4, 16, 30, 12, 9, 22, 46, 58, 74,82};
+        int evenCount = 0;
+
+        foreach (int number in array)
+        {
+            if (number%2 == 0)
+            {
+                 evenCount++;
+            }
+        }
+    Console.WriteLine ($"Колличество четных чисел: {evenCount}");
+        }
+    }
+}
